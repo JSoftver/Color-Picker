@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bg">
+    <div id="defText">
+        <h1>Color Picker</h1>
+    </div>
+    <hr>
+    <div id="description">
+        <p>This is a very helpfull program for anything.</p>
+    </div>
+    <br><br>
+    <div id="colorPicker">
+        <input type="color" id="pickedColor" value="#fe5105" onchange="startPicking()">
+    </div>
+    <br>
+    <div id="pickedColorValue">
+        <span>This is the picked color: </span><span id="pcv"></span>
+    </div>
+    <br><br>
+    <div id="lifPC">
+        <input type="text" id="cImgPC" onchange="loadImgPC()" placeholder="C:\">
+        <button onclick="document.getElementById('sImgPC').src = ' '; document.getElementById('cImgPC').value = '';">Hide</button>
+        <img alt="No image" id="sImgPC">
+    </div>
+    <div id="lifWEB">
+        <input type="url" id="cImgWEB" onchange="loadImgWEB()" placeholder="https://">
+        <button onclick="document.getElementById('sImgWEB').src = ' '; document.getElementById('cImgWEB').value = '';">Hide</button>
+        <img alt="No image" id="sImgWEB">
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+* {
+    color: #fe5105;
+    font-family: "Calibri";
+    font-weight: bold;
+}
+
+hr {
+    border: 2px solid #fe5105;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fe5105;
+    color: #1c1d1f;
+}
+
+button:hover {
+    background-color: #1c1d1f;
+    color: #fe5105;
+}
+
+body {
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+input[type="text"], [type="url"] {
+    color: #fe5105;
+    background-color: #1c1d1f;
+    border: 1px solid #fe5105;
+}
+
+input[type="color"] {
+    background-color: transparent;
+}
